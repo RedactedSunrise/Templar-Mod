@@ -1,0 +1,493 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\skillstates\\chainpull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\skillstates\\chainpull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\templarsurvivor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\templarsurvivor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\content\\templarunlockables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\content\\templarunlockables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\skillstates\\holyrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\skillstates\\holyrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\components\\templarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\components\\templarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\content\\templarconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\content\\templarconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\components\\templarpassive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\components\\templarpassive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\components\\templaraurafieldcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\components\\templaraurafieldcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\content\\templarassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\content\\templarassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\content\\templarbuffs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\content\\templarbuffs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\achievements\\unforgivenunlockachievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\achievements\\unforgivenunlockachievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\skillstates\\mainstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\skillstates\\mainstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\UnforgivenMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\modules\\basecontent\\basestates\\basemeleeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\UnforgivenMod.csproj|solutionrelative:unforgivenproject\\modules\\basecontent\\basestates\\basemeleeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\content\\templarstaticvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\content\\templarstaticvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\skillstates\\slashcombo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\skillstates\\slashcombo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\skillstates\\projectileholypierce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\skillstates\\projectileholypierce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\content\\damagetypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\content\\damagetypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\content\\templarstates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\content\\templarstates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\content\\templartokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\content\\templartokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\modules\\basecontent\\basestates\\basetemplarskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\modules\\basecontent\\basestates\\basetemplarskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\modules\\characterassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\modules\\characterassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarmod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarmod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarmod.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarmod.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\UnforgivenMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\UnforgivenMod.csproj|solutionrelative:unforgivenproject\\templarplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\achievements\\unforgivenmasteryachievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\achievements\\unforgivenmasteryachievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\UnforgivenMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\networkweaver\\seamstressmod.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\UnforgivenMod.csproj|solutionrelative:unforgivenproject\\networkweaver\\seamstressmod.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\components\\windexplosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\components\\windexplosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|c:\\users\\rjpro\\onedrive\\documents\\github\\unforgivenmod\\unforgivenproject\\templarcharacter\\components\\unforgivencss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7123AB06-B74C-425C-A5F1-C9B91229A8B2}|UnforgivenProject\\TemplarMod.csproj|solutionrelative:unforgivenproject\\templarcharacter\\components\\unforgivencss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 252,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TemplarPassive.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Components\\TemplarPassive.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Components\\TemplarPassive.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Components\\TemplarPassive.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Components\\TemplarPassive.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T01:42:18.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TemplarAuraFieldComponent.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Components\\TemplarAuraFieldComponent.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Components\\TemplarAuraFieldComponent.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Components\\TemplarAuraFieldComponent.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Components\\TemplarAuraFieldComponent.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T13:48:28.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChainPull.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\SkillStates\\ChainPull.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\SkillStates\\ChainPull.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\SkillStates\\ChainPull.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\SkillStates\\ChainPull.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAQwHoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T07:49:53.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HolyRain.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\SkillStates\\HolyRain.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\SkillStates\\HolyRain.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\SkillStates\\HolyRain.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\SkillStates\\HolyRain.cs",
+              "ViewState": "AQIAAKcAAAAAAAAAAAAEwLgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T04:10:23.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CharacterAssets.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\Modules\\CharacterAssets.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\Modules\\CharacterAssets.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\Modules\\CharacterAssets.cs",
+              "RelativeToolTip": "UnforgivenProject\\Modules\\CharacterAssets.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAQwCQAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T01:59:33.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BaseTemplarSkillState.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\Modules\\BaseContent\\BaseStates\\BaseTemplarSkillState.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\Modules\\BaseContent\\BaseStates\\BaseTemplarSkillState.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\Modules\\BaseContent\\BaseStates\\BaseTemplarSkillState.cs",
+              "RelativeToolTip": "UnforgivenProject\\Modules\\BaseContent\\BaseStates\\BaseTemplarSkillState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T00:41:23.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TemplarMod.csproj",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarMod.csproj",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarMod.csproj",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarMod.csproj",
+              "RelativeToolTip": "UnforgivenProject\\TemplarMod.csproj",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAawFMAAABhAwAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-01T00:35:39.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProjectileHolyPierce.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\SkillStates\\ProjectileHolyPierce.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\SkillStates\\ProjectileHolyPierce.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\SkillStates\\ProjectileHolyPierce.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\SkillStates\\ProjectileHolyPierce.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAApwCMAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T00:35:03.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainState.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\SkillStates\\MainState.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\SkillStates\\MainState.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\SkillStates\\MainState.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\SkillStates\\MainState.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowC0AAAB0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T00:33:08.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TemplarPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarPlugin.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarPlugin.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarPlugin.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarPlugin.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAEwCgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T11:05:23.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BaseMeleeAttack.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\Modules\\BaseContent\\BaseStates\\BaseMeleeAttack.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\Modules\\BaseContent\\BaseStates\\BaseMeleeAttack.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\Modules\\BaseContent\\BaseStates\\BaseMeleeAttack.cs",
+              "RelativeToolTip": "UnforgivenProject\\Modules\\BaseContent\\BaseStates\\BaseMeleeAttack.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAIAwwKsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T11:04:50.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UnforgivenMod",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarMod.csproj",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarMod.csproj",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarMod.csproj",
+              "RelativeToolTip": "UnforgivenProject\\TemplarMod.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-31T10:54:53.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SlashCombo.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\SkillStates\\SlashCombo.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\SkillStates\\SlashCombo.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\SkillStates\\SlashCombo.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\SkillStates\\SlashCombo.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T10:17:52.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TemplarStaticValues.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarStaticValues.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarStaticValues.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarStaticValues.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarStaticValues.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T09:48:43.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TemplarUnlockables.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarUnlockables.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarUnlockables.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarUnlockables.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarUnlockables.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T09:32:12.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TemplarTokens.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarTokens.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarTokens.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarTokens.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarTokens.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAEwEYAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T09:05:56.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TemplarStates.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarStates.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarStates.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarStates.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarStates.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T09:03:54.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TemplarConfig.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarConfig.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarConfig.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarConfig.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T09:03:22.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TemplarBuffs.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarBuffs.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarBuffs.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarBuffs.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarBuffs.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwBAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T09:02:53.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TemplarAssets.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarAssets.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarAssets.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\TemplarAssets.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Content\\TemplarAssets.cs",
+              "ViewState": "AQIAAGsBAAAAAAAAAAAIwIMBAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T09:01:18.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DamageTypes.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\DamageTypes.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Content\\DamageTypes.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Content\\DamageTypes.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Content\\DamageTypes.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwDEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T08:58:37.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SeamstressMod.dll",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\NetworkWeaver\\SeamstressMod.dll",
+              "RelativeDocumentMoniker": "UnforgivenProject\\NetworkWeaver\\SeamstressMod.dll",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\NetworkWeaver\\SeamstressMod.dll",
+              "RelativeToolTip": "UnforgivenProject\\NetworkWeaver\\SeamstressMod.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-08-31T08:58:13.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UnforgivenUnlockAchievement.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Achievements\\UnforgivenUnlockAchievement.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Achievements\\UnforgivenUnlockAchievement.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Achievements\\UnforgivenUnlockAchievement.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Achievements\\UnforgivenUnlockAchievement.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAhwCMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T08:57:48.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UnforgivenMasteryAchievement.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Achievements\\UnforgivenMasteryAchievement.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Achievements\\UnforgivenMasteryAchievement.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Achievements\\UnforgivenMasteryAchievement.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Achievements\\UnforgivenMasteryAchievement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T08:57:46.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "WindExplosion.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Components\\WindExplosion.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Components\\WindExplosion.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Components\\WindExplosion.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Components\\WindExplosion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T08:56:58.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UnforgivenCSS.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Components\\UnforgivenCSS.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Components\\UnforgivenCSS.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Components\\UnforgivenCSS.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Components\\UnforgivenCSS.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T08:52:00.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TemplarController.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Components\\TemplarController.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\Components\\TemplarController.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\Components\\TemplarController.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\Components\\TemplarController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAcwF4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T08:51:31.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TemplarSurvivor.cs",
+              "DocumentMoniker": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\TemplarSurvivor.cs",
+              "RelativeDocumentMoniker": "UnforgivenProject\\TemplarCharacter\\TemplarSurvivor.cs",
+              "ToolTip": "C:\\Users\\rjpro\\OneDrive\\Documents\\GitHub\\UnforgivenMod\\UnforgivenProject\\TemplarCharacter\\TemplarSurvivor.cs",
+              "RelativeToolTip": "UnforgivenProject\\TemplarCharacter\\TemplarSurvivor.cs",
+              "ViewState": "AQIAAAECAAAAAAAAAAAiwBoCAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T08:48:44.579Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
