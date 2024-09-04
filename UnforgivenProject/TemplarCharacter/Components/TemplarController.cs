@@ -22,6 +22,10 @@ namespace TemplarMod.Templar.Components
         public GameObject templarAura = TemplarAssets.auraWardCleansingFire;
         protected float stopwatch;
         public bool auraActive;
+        public float auraRadiusRecalculate;
+        public float auraPowerRecalculate;
+        public float auraPowerBossTier;
+        public float auraPowerUncommonTier;
 
         private void Awake()
         {
@@ -35,6 +39,15 @@ namespace TemplarMod.Templar.Components
         }
         private void FixedUpdate()
         {
+            auraPowerBossTier = (this.characterBody.inventory.GetItemCount(RoR2Content.Items.Pearl) + (this.characterBody.inventory.GetItemCount(RoR2Content.Items.ShinyPearl)));
+            auraPowerUncommonTier = (this.characterBody.inventory.GetItemCount(RoR2Content.Items.LevelBonus) + (this.characterBody.inventory.GetItemCount(RoR2Content.Items.BonusGoldPackOnKill)));
+            auraPowerRecalculate = (1f + (0.30f * auraPowerBossTier) + (0.15f * auraPowerUncommonTier));
+
+            auraRadiusRecalculate = (((this.characterBody.armor * 0.2f) + 8f) * auraPowerRecalculate);
+
+            TemplarAssets.auraWardCleansingFire.GetComponent<BuffWard>().radius = auraRadiusRecalculate;
+            TemplarAssets.auraWardCleansingFire.GetComponent<SphereCollider>().radius = auraRadiusRecalculate;
+
             if (!this.characterBody.characterMotor.isGrounded)
             {
                 if (skillLocator.primary.skillDef.skillIndex == SkillCatalog.FindSkillIndexByName("TemplarZeal"))
@@ -42,6 +55,7 @@ namespace TemplarMod.Templar.Components
                     skillLocator.primary.SetSkillOverride(base.gameObject, TemplarSurvivor.templarHolyBolt, GenericSkill.SkillOverridePriority.Contextual);
                     skillLocator.primary.SetBonusStockFromBody(characterBody.maxJumpCount - 1);
                     skillLocator.primary.stock = skillLocator.primary.maxStock;
+
                 }
             }
             else

@@ -47,40 +47,35 @@ namespace TemplarMod.Templar.Content
 
             #region Passive
             Language.Add(prefix + "PASSIVE_NAME", "Divine Aura");
-            Language.Add(prefix + "PASSIVE_DESCRIPTION", $"<color=#FFBF66>Wanderer</color> builds up a passive <style=cIsHealing>shield</style> while moving. " +
-                $"At max stacks, the <style=cIsHealing>shield</style> breaks and grants a <style=cIsHealing>barrier</style>. <color=#FFBF66>Wanderer</color> has <style=cIsDamage>1.5x crit chance</style>.");
+            Language.Add(prefix + "PASSIVE_DESCRIPTION", $"After being in combat for 5 seconds, emenate an aura with powerful effects to nearby allies.");
             #endregion
 
             #region Primary
             Language.Add(prefix + "PRIMARY_SWING_NAME", "Zeal");
-            Language.Add(prefix + "PRIMARY_SWING_DESCRIPTION", $"Swing in front dealing <style=cIsDamage>{TemplarStaticValues.swingDamageCoefficient * 100f}% damage</style>.");
+            Language.Add(prefix + "PRIMARY_SWING_DESCRIPTION", $"Swing in front dealing <style=cIsDamage>{TemplarStaticValues.swingDamageCoefficient * 100f}% damage</style>. You are grounded during the swing.");
             #endregion
 
             #region PrimaryAirborne
             Language.Add(prefix + "PRIMARY_SHOT_NAME", "Holy Bolt");
-            Language.Add(prefix + "PRIMARY_SHOT_DESCRIPTION", "Shoot Bolt.");
+            Language.Add(prefix + "PRIMARY_SHOT_DESCRIPTION", "Shoot a bolt of holy energy for <style=cIsDamage>250% damage</style>. This skill is only available while airborne.");
             #endregion
 
             #region Secondary
             Language.Add(prefix + "SECONDARY_STEEL_NAME", "Willbreaker");
-            Language.Add(prefix + "SECONDARY_STEEL_DESCRIPTION", $"<style=cIsUtility>Swift</style>. Stab forward dealing <style=cIsDamage>{TemplarStaticValues.stabDamageCoefficient * 100f}% damage</style>. " +
-                $"On hit, gain a stack of <color=#FFBF66>Gathering Storm</color>. At 2 stacks your next <color=#FFBF66>Steel Tempest</color> will fire a tornado dealing <style=cIsDamage>{TemplarStaticValues.tornadoDamageCoefficient * 100f}% damage</style>.");
+            Language.Add(prefix + "SECONDARY_STEEL_DESCRIPTION", $"Grab enemies in front of you with holy light, dealing 80% damage on eaech struck target while pulling them to you.");
             #endregion
 
             #region Utility 
             Language.Add(prefix + "UTILITY_SWEEP_NAME", "Holy Bombardment");
-            Language.Add(prefix + "UTILITY_SWEEP_DESCRIPTION", $"Dash towards an enemy dealing <style=cIsDamage>{TemplarStaticValues.dashDamageCoefficient * 100f}% damage</style>. " +
-                $"After each dash, your next dash will deal and additional <style=cIsDamage>{TemplarStaticValues.dashStackingDamageCoefficient * 100f}% damage</style> up to a cap of <style=cIsDamage>{TemplarStaticValues.dashStackingDamageCoefficient * 4f * 100f}% damage</style>.");
-
+            Language.Add(prefix + "UTILITY_SWEEP_DESCRIPTION", $"Bombard the area with holy light for 6 seconds, dealing <style=cIsDamage>120% damage per second</style>.");
             #endregion
 
             #region Special
-            Language.Add(prefix + "SPECIAL_BREATH_NAME", "Holy Cause");
-            Language.Add(prefix + "SPECIAL_BREATH_DESCRIPTION", $"Dash towards an <style=cIsUtility>airborne</style> enemy then rapidly attack in an area for <style=cIsDamage>2x{TemplarStaticValues.specialFirstDamageCoefficient * 100f}% + {TemplarStaticValues.specialFinalDamageCoefficient * 100f}% damage</style>. " +
-                $"Gain <style=cIsDamage>armor shred</style> for 6 seconds.");
+            Language.Add(prefix + "SPECIAL_HCAUSE_NAME", "Holy Cause");
+            Language.Add(prefix + "SPECIAL_HCAUSE_DESCRIPTION", $"Force-activate your currently selected Aura, granting it 200% additional radius for 5 seconds.");
 
-            Language.Add(prefix + "SPECIAL_SCEP_BREATH_NAME", "First Breath");
-            Language.Add(prefix + "SPECIAL_SCEP_BREATH_DESCRIPTION", $"Dash towards an <style=cIsUtility>airborne</style> enemy then rapidly attack in an area for <style=cIsDamage>2x{TemplarStaticValues.specialFirstDamageCoefficient * 100f}% + {TemplarStaticValues.specialFinalDamageCoefficient * 100f}% damage</style>. " +
+            Language.Add(prefix + "SPECIAL_SCEP_HCAUSE_NAME", "Radiance");
+            Language.Add(prefix + "SPECIAL_SCEP_HCAUSE_DESCRIPTION", $"Dash towards an <style=cIsUtility>airborne</style> enemy then rapidly attack in an area for <style=cIsDamage>2x{TemplarStaticValues.specialFirstDamageCoefficient * 100f}% + {TemplarStaticValues.specialFinalDamageCoefficient * 100f}% damage</style>. " +
                 $"Gain <style=cIsDamage>armor shred</style> for 6 seconds." + Tokens.ScepterDescription("<style=cIsUtility>Reset your secondary cooldown</style>. Enemies hit by <color=#FFBF66>First Breath</color> can be targetted by <color=#FFBF66>Sweeping Blade</color> again."));
             #endregion
 

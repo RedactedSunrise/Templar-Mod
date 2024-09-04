@@ -345,9 +345,9 @@ namespace TemplarMod.Templar
         {
             SkillDef LastBreath = Skills.CreateSkillDef(new SkillDefInfo
             {
-                skillName = "LastBreath",
-                skillNameToken = TEMPLAR_PREFIX + "SPECIAL_BREATH_NAME",
-                skillDescriptionToken = TEMPLAR_PREFIX + "SPECIAL_BREATH_DESCRIPTION",
+                skillName = "Holy Cause",
+                skillNameToken = TEMPLAR_PREFIX + "SPECIAL_HCAUSE_NAME",
+                skillDescriptionToken = TEMPLAR_PREFIX + "SPECIAL_HCAUSE_DESCRIPTION",
                 keywordTokens = new string[] { },
                 skillIcon = assetBundle.LoadAsset<Sprite>("texSpecialIcon"),
 

@@ -380,7 +380,7 @@ namespace TemplarMod.Templar.Content
             auraWardCleansingFire = Addressables.LoadAssetAsync<GameObject>("RoR2/DLC1/Railgunner/RailgunnerMineAltDetonated.prefab").WaitForCompletion().InstantiateClone("AuraWardCleansingFire", false);
 
             BuffWard buffWard = auraWardCleansingFire.GetComponent<BuffWard>();
-            buffWard.radius = 12f;
+            buffWard.radius = 0f;
             buffWard.interval = 0.01f;
             buffWard.buffDef = TemplarBuffs.AflameBuff;
             buffWard.expires = false;
