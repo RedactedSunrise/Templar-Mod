@@ -46,8 +46,12 @@ namespace TemplarMod.Templar.Content
             #endregion
 
             #region Passive
-            Language.Add(prefix + "PASSIVE_NAME", "Divine Aura");
-            Language.Add(prefix + "PASSIVE_DESCRIPTION", $"After being in combat for 5 seconds, emenate an aura with powerful effects to nearby allies.");
+            Language.Add(prefix + "PASSIVE_AURA_FIRE", "Cleansing Fire");
+            Language.Add(prefix + "PASSIVE_DESCRIPTION_FIRE", $"After being in combat for 5 seconds, <style=cIsDamage>emanate an aura</style> that grants you and nearby allies <style=cIsDamage>Ablaze</style>. <style=cIsHealth>Radiant</style>.");
+            Language.Add(prefix + "PASSIVE_AURA_CONVICT", "Conviction");
+            Language.Add(prefix + "PASSIVE_DESCRIPTION_CONVICT", $"After being in combat for 5 seconds, <style=cIsDamage>emanate an aura</style> that makes any nearby enemy <style=cIsDamage>frail</style>. <style=cIsHealth>Radiant</style>.");
+            Language.Add(prefix + "PASSIVE_AURA_PRAY", "Prayer");
+            Language.Add(prefix + "PASSIVE_DESCRIPTION_PRAY", $"After being in combat for 5 seconds, <style=cIsDamage>emanate an aura</style> that grants you and nearby allies <style=cIsDamage>additional life over time</style>. <style=cIsHealth>Radiant</style>.");
             #endregion
 
             #region Primary
@@ -62,12 +66,12 @@ namespace TemplarMod.Templar.Content
 
             #region Secondary
             Language.Add(prefix + "SECONDARY_STEEL_NAME", "Willbreaker");
-            Language.Add(prefix + "SECONDARY_STEEL_DESCRIPTION", $"Grab enemies in front of you with holy light, dealing 80% damage on eaech struck target while pulling them to you.");
+            Language.Add(prefix + "SECONDARY_STEEL_DESCRIPTION", $"Grab enemies in front of you with holy light, dealing <style=cIsDamage>80% damage</style> on each struck target while pulling them to you.");
             #endregion
 
             #region Utility 
             Language.Add(prefix + "UTILITY_SWEEP_NAME", "Holy Bombardment");
-            Language.Add(prefix + "UTILITY_SWEEP_DESCRIPTION", $"Bombard the area with holy light for 6 seconds, dealing <style=cIsDamage>120% damage per second</style>.");
+            Language.Add(prefix + "UTILITY_SWEEP_DESCRIPTION", $"Bombard the area with holy light for 6 seconds, dealing <style=cIsDamage>120% damage per second</style>. <style=cIsDamage>Plunging</style>. <style=cIsHealth>Radiant</style>.");
             #endregion
 
             #region Special

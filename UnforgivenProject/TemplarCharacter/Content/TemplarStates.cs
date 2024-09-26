@@ -15,6 +15,7 @@ namespace TemplarMod.Templar.Content
             Modules.Content.AddEntityState(typeof(ProjectileHolyPierce));
             Modules.Content.AddEntityState(typeof(HolyBarrage));
             Modules.Content.AddEntityState(typeof(ChainPull));
+            Modules.Content.AddEntityState(typeof(HolyCause));
         }
     }
 }

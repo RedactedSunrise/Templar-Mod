@@ -6,6 +6,7 @@ using TemplarMod.Modules;
 using RoR2.Projectile;
 using TemplarMod.Templar.Content;
 using TemplarMod.Templar.Components;
+using RoR2.Skills;
 
 namespace TemplarMod.Templar.SkillStates
 {
@@ -36,14 +37,15 @@ namespace TemplarMod.Templar.SkillStates
                 }
             }
         }
+
         public override void FixedUpdate()
         {
             base.FixedUpdate();
 
-            if (base.isAuthority && characterBody.HasBuff(TemplarBuffs.AuraActiveBuff) && !base.gameObject.GetComponent<TemplarController>().auraActive)
+            if ((base.isAuthority && characterBody.HasBuff(TemplarBuffs.AuraActiveBuff) && !base.gameObject.GetComponent<TemplarController>().auraActive))
             {
                 FireProjectileInfo fireProjectileInfo = default(FireProjectileInfo);
-                fireProjectileInfo.projectilePrefab = base.gameObject.GetComponent<TemplarController>().templarAura;
+                fireProjectileInfo.projectilePrefab = GetComponent<TemplarController>().templarAura;
                 fireProjectileInfo.position = characterBody.corePosition;
                 fireProjectileInfo.rotation = Util.QuaternionSafeLookRotation(characterBody.characterMotor.Motor.CharacterForward);
                 fireProjectileInfo.owner = base.gameObject;

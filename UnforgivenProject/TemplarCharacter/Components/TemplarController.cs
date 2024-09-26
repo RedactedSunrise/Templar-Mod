@@ -5,9 +5,11 @@ using RoR2.HudOverlay;
 using RoR2.Projectile;
 using RoR2.Skills;
 using System;
+using TemplarMod.Modules.BaseStates;
 using TemplarMod.Templar.Content;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.PlayerLoop;
 
 namespace TemplarMod.Templar.Components
 {
@@ -19,13 +21,20 @@ namespace TemplarMod.Templar.Components
         private CharacterModel characterModel;
         private Animator animator;
         private SkillLocator skillLocator;
-        public GameObject templarAura = TemplarAssets.auraWardCleansingFire;
+        public GameObject templarAura;
+        public GameObject fireAura = TemplarAssets.auraWardCleansingFire;
+        public GameObject convictAura = TemplarAssets.auraWardConviction;
+        public GameObject prayAura = TemplarAssets.auraWardPrayer;
+        public SkillDef skillDef;
         protected float stopwatch;
         public bool auraActive;
         public float auraRadiusRecalculate;
         public float auraPowerRecalculate;
         public float auraPowerBossTier;
         public float auraPowerUncommonTier;
+        public float auraForceActivateRadius;
+        public float barrageRadiusRecalculate;
+        public bool auraForceActivateBonus;
 
         private void Awake()
         {
@@ -37,16 +46,62 @@ namespace TemplarMod.Templar.Components
             this.skillLocator = this.GetComponent<SkillLocator>();
             this.skinController = modelLocator.modelTransform.gameObject.GetComponent<ModelSkinController>();
         }
+
+        private void Start()
+        {
+            GenericSkill passiveSkillSelected = GetComponent<GenericSkill>();
+
+            if (passiveSkillSelected != null && passiveSkillSelected.skillNameToken == ("KENKO_UNFORGIVEN_PASSIVE_AURA_FIRE"))
+            {
+                templarAura = fireAura;
+                Log.Debug("Looking for fire aura?");
+                Log.Debug("" + templarAura);
+            }
+
+            if (passiveSkillSelected != null && passiveSkillSelected.skillNameToken == ("KENKO_UNFORGIVEN_PASSIVE_AURA_CONVICT"))
+            {
+                templarAura = convictAura;
+            }
+
+            if (passiveSkillSelected != null && passiveSkillSelected.skillNameToken == ("KENKO_UNFORGIVEN_PASSIVE_AURA_PRAY"))
+            {
+                templarAura = prayAura;
+            }
+
+            // Log.Debug("" + passiveSkillSelected.skillNameToken);
+
+        }
         private void FixedUpdate()
         {
+            if (this.characterBody.HasBuff(TemplarBuffs.AuraForceActivateBuff))
+            {
+                auraForceActivateBonus = true;
+            }
+            else
+            {
+                auraForceActivateBonus = false;
+            }
+
+            if (auraForceActivateBonus == true)
+            {
+                auraForceActivateRadius = 2.0f;
+            }
+            else
+            {
+                auraForceActivateRadius = 1.0f;
+            }
+
             auraPowerBossTier = (this.characterBody.inventory.GetItemCount(RoR2Content.Items.Pearl) + (this.characterBody.inventory.GetItemCount(RoR2Content.Items.ShinyPearl)));
             auraPowerUncommonTier = (this.characterBody.inventory.GetItemCount(RoR2Content.Items.LevelBonus) + (this.characterBody.inventory.GetItemCount(RoR2Content.Items.BonusGoldPackOnKill)));
             auraPowerRecalculate = (1f + (0.30f * auraPowerBossTier) + (0.15f * auraPowerUncommonTier));
 
-            auraRadiusRecalculate = (((this.characterBody.armor * 0.2f) + 8f) * auraPowerRecalculate);
+            auraRadiusRecalculate = (((this.characterBody.armor * 0.2f) + 8f) * (auraPowerRecalculate + auraForceActivateRadius - 1f));
+            barrageRadiusRecalculate = (((this.characterBody.armor * 0.2f) + 24f) * (auraPowerRecalculate + auraForceActivateRadius - 1f));
 
-            TemplarAssets.auraWardCleansingFire.GetComponent<BuffWard>().radius = auraRadiusRecalculate;
-            TemplarAssets.auraWardCleansingFire.GetComponent<SphereCollider>().radius = auraRadiusRecalculate;
+            TemplarAssets.holyBarragePrefab.transform.localScale = new Vector3(barrageRadiusRecalculate, 60f, barrageRadiusRecalculate);
+
+            //templarAura.GetComponent<BuffWard>().radius = auraRadiusRecalculate;
+            //templarAura.GetComponent<SphereCollider>().radius = auraRadiusRecalculate;
 
             if (!this.characterBody.characterMotor.isGrounded)
             {
@@ -58,6 +113,7 @@ namespace TemplarMod.Templar.Components
 
                 }
             }
+
             else
             {
                 if (skillLocator.primary.skillDef.skillIndex == SkillCatalog.FindSkillIndexByName(TemplarSurvivor.templarHolyBolt.skillName))
@@ -66,6 +122,11 @@ namespace TemplarMod.Templar.Components
                     skillLocator.primary.SetBonusStockFromBody(0);
                     skillLocator.primary.stock = skillLocator.primary.maxStock;
                 }
+            }
+
+            if (this.characterBody.GetBuffCount(TemplarBuffs.AuraActiveBuff) >= 1)
+            {
+                characterBody.SetBuffCount(TemplarBuffs.AuraTimerBuff.buffIndex, 0);
             }
 
             if (!this.characterBody.outOfCombat && !this.characterBody.HasBuff(TemplarBuffs.AuraActiveBuff))
@@ -83,20 +144,20 @@ namespace TemplarMod.Templar.Components
                 else
                 {
                     stopwatch += Time.deltaTime;
-                    if (stopwatch >= 1f)
+                    if ((stopwatch >= 1f) | (this.characterBody.GetBuffCount(TemplarBuffs.AuraForceActivateBuff) == 1))
                     {
-                            if (this.characterBody.GetBuffCount(TemplarBuffs.AuraTimerBuff) == 1)
+                        if ((this.characterBody.GetBuffCount(TemplarBuffs.AuraTimerBuff) == 1) | (this.characterBody.GetBuffCount(TemplarBuffs.AuraForceActivateBuff) == 1))
+                        {
+                            if (NetworkServer.active)
                             {
-                                if (NetworkServer.active)
-                                {
                                 characterBody.AddBuff(TemplarBuffs.AuraActiveBuff);
-                                }
+                            }
                         }
                         if (NetworkServer.active)
                         {
                             characterBody.RemoveBuff(TemplarBuffs.AuraTimerBuff);
                         }
-                            stopwatch = 0f;
+                        stopwatch = 0f;
                     }
                 }
             }

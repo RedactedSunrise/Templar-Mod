@@ -43,6 +43,12 @@ namespace TemplarMod.Templar
 
         public static SkillDef templarHolyBolt;
 
+        public static SkillDef templarAuraFire;
+
+        public static SkillDef templarAuraConvict;
+
+        public static SkillDef templarAuraPray;
+
         public override BodyInfo bodyInfo => new BodyInfo
         {
             bodyName = bodyName,
@@ -191,37 +197,56 @@ namespace TemplarMod.Templar
 
             skillLocator.passiveSkill.enabled = false;
 
-            passive.unforgivenPassive = Skills.CreateSkillDef(new SkillDefInfo
+            passive.templarAuraFire = Skills.CreateSkillDef(new SkillDefInfo
             {
-                skillName = TEMPLAR_PREFIX + "PASSIVE_NAME",
-                skillNameToken = TEMPLAR_PREFIX + "PASSIVE_NAME",
-                skillDescriptionToken = TEMPLAR_PREFIX + "PASSIVE_DESCRIPTION",
+                skillName = TEMPLAR_PREFIX + "PASSIVE_AURA_FIRE",
+                skillNameToken = TEMPLAR_PREFIX + "PASSIVE_AURA_FIRE",
+                skillDescriptionToken = TEMPLAR_PREFIX + "PASSIVE_DESCRIPTION_FIRE",
                 skillIcon = assetBundle.LoadAsset<Sprite>("texPassiveIcon"),
-                keywordTokens = new string[] { },
+                keywordTokens = new string[] { 
+                Tokens.radiantKeyword,
+                Tokens.aflameKeyword
+                },
                 activationState = new EntityStates.SerializableEntityStateType(typeof(EntityStates.Idle)),
-                activationStateMachineName = "",
-                baseMaxStock = 1,
-                baseRechargeInterval = 0f,
-                beginSkillCooldownOnSkillEnd = false,
-                canceledFromSprinting = false,
-                forceSprintDuringState = false,
-                fullRestockOnAssign = true,
-                interruptPriority = EntityStates.InterruptPriority.Any,
-                resetCooldownTimerOnUse = false,
-                isCombatSkill = false,
-                mustKeyPress = false,
-                cancelSprintingOnActivation = false,
-                rechargeStock = 1,
-                requiredStock = 2,
-                stockToConsume = 1
             });
 
-            Skills.AddPassiveSkills(passive.passiveSkillSlot.skillFamily, passive.unforgivenPassive);
+            Skills.AddPassiveSkills(passive.passiveSkillSlot.skillFamily, passive.templarAuraFire);
+
+            passive.templarAuraConvict = Skills.CreateSkillDef(new SkillDefInfo
+            {
+                skillName = TEMPLAR_PREFIX + "PASSIVE_AURA_CONVICT",
+                skillNameToken = TEMPLAR_PREFIX + "PASSIVE_AURA_CONVICT",
+                skillDescriptionToken = TEMPLAR_PREFIX + "PASSIVE_DESCRIPTION_CONVICT",
+                skillIcon = assetBundle.LoadAsset<Sprite>("texPassiveIcon"),
+                keywordTokens = new string[] {
+                Tokens.radiantKeyword,
+                Tokens.frailKeyword
+                },
+                activationState = new EntityStates.SerializableEntityStateType(typeof(EntityStates.Idle)),
+            });
+
+            Skills.AddPassiveSkills(passive.passiveSkillSlot.skillFamily, passive.templarAuraConvict);
+
+            passive.templarAuraPray = Skills.CreateSkillDef(new SkillDefInfo
+            {
+                skillName = TEMPLAR_PREFIX + "PASSIVE_AURA_PRAY",
+                skillNameToken = TEMPLAR_PREFIX + "PASSIVE_AURA_PRAY",
+                skillDescriptionToken = TEMPLAR_PREFIX + "PASSIVE_DESCRIPTION_PRAY",
+                skillIcon = assetBundle.LoadAsset<Sprite>("texPassiveIcon"),
+                keywordTokens = new string[] {
+                Tokens.radiantKeyword,
+                Tokens.rejuvenatingKeyword
+                },
+                activationState = new EntityStates.SerializableEntityStateType(typeof(EntityStates.Idle)),
+            });
+
+            Skills.AddPassiveSkills(passive.passiveSkillSlot.skillFamily, passive.templarAuraPray);
+
         }
 
         private void AddPrimarySkills()
         {
-            SteppedSkillDef unforgivenPrimary = Skills.CreateSkillDef<SteppedSkillDef>(new SkillDefInfo
+            SteppedSkillDef templarPrimary = Skills.CreateSkillDef<SteppedSkillDef>(new SkillDefInfo
                 (
                     "TemplarZeal",
                     TEMPLAR_PREFIX + "PRIMARY_SWING_NAME",
@@ -230,11 +255,14 @@ namespace TemplarMod.Templar
                     new SerializableEntityStateType(typeof(SlashCombo)),
                     "Weapon"
                 ));
-            unforgivenPrimary.stepCount = 2;
-            unforgivenPrimary.stepGraceDuration = 0.1f;
-            unforgivenPrimary.keywordTokens = new string[] { };
+            templarPrimary.stepCount = 2;
+            templarPrimary.stepGraceDuration = 0.1f;
+            templarPrimary.keywordTokens = new string[] {
+            Tokens.groundedKeyword,
+            Tokens.agileKeyword
+            };
 
-            Skills.AddPrimarySkills(bodyPrefab, unforgivenPrimary);
+            Skills.AddPrimarySkills(bodyPrefab, templarPrimary);
 
             templarHolyBolt = Skills.CreateSkillDef<SkillDef>(new SkillDefInfo
             {
@@ -275,7 +303,7 @@ namespace TemplarMod.Templar
                 skillName = "Willbreaker",
                 skillNameToken = TEMPLAR_PREFIX + "SECONDARY_STEEL_NAME",
                 skillDescriptionToken = TEMPLAR_PREFIX + "SECONDARY_STEEL_DESCRIPTION",
-                keywordTokens = new string[] { Tokens.agileKeyword, Tokens.unforgivenSwiftKeyword },
+                keywordTokens = new string[] { },
                 skillIcon = assetBundle.LoadAsset<Sprite>("texSecondaryIcon"),
 
                 activationState = new SerializableEntityStateType(typeof(ChainPull)),
@@ -311,7 +339,7 @@ namespace TemplarMod.Templar
                 skillName = "HolyRain",
                 skillNameToken = TEMPLAR_PREFIX + "UTILITY_SWEEP_NAME",
                 skillDescriptionToken = TEMPLAR_PREFIX + "UTILITY_SWEEP_DESCRIPTION",
-                keywordTokens = new string[] { },
+                keywordTokens = new string[] { Tokens.plungingKeyword, Tokens.radiantKeyword },
                 skillIcon = assetBundle.LoadAsset<Sprite>("texUtilityIcon"),
 
                 activationState = new SerializableEntityStateType(typeof(HolyBarrage)),
@@ -343,7 +371,7 @@ namespace TemplarMod.Templar
 
         private void AddSpecialSkills()
         {
-            SkillDef LastBreath = Skills.CreateSkillDef(new SkillDefInfo
+            SkillDef HolyCause = Skills.CreateSkillDef(new SkillDefInfo
             {
                 skillName = "Holy Cause",
                 skillNameToken = TEMPLAR_PREFIX + "SPECIAL_HCAUSE_NAME",
@@ -351,11 +379,11 @@ namespace TemplarMod.Templar
                 keywordTokens = new string[] { },
                 skillIcon = assetBundle.LoadAsset<Sprite>("texSpecialIcon"),
 
-                activationState = new EntityStates.SerializableEntityStateType(typeof(SlashCombo)),
-                activationStateMachineName = "Dash",
-                interruptPriority = EntityStates.InterruptPriority.PrioritySkill,
+                activationState = new EntityStates.SerializableEntityStateType(typeof(HolyCause)),
+                activationStateMachineName = "Weapon2",
+                interruptPriority = EntityStates.InterruptPriority.Any,
 
-                baseRechargeInterval = 9f,
+                baseRechargeInterval = 15f,
                 baseMaxStock = 1,
 
                 rechargeStock = 1,
@@ -366,15 +394,15 @@ namespace TemplarMod.Templar
                 fullRestockOnAssign = true,
                 dontAllowPastMaxStocks = false,
                 mustKeyPress = true,
-                beginSkillCooldownOnSkillEnd = true,
+                beginSkillCooldownOnSkillEnd = false,
 
                 isCombatSkill = true,
                 canceledFromSprinting = false,
                 cancelSprintingOnActivation = false,
-                forceSprintDuringState = true,
+                forceSprintDuringState = false,
             });
 
-            Skills.AddSpecialSkills(bodyPrefab, LastBreath);
+            Skills.AddSpecialSkills(bodyPrefab, HolyCause);
         }
         
         private void InitializeScepter()
@@ -531,17 +559,19 @@ namespace TemplarMod.Templar
         {
             if (NetworkServer.active && self.alive || !self.godMode || self.ospTimer <= 0f)
             {
-                CharacterBody attackerBody = damageInfo.attacker.GetComponent<CharacterBody>();
-
-                if (attackerBody && attackerBody.HasBuff(TemplarBuffs.AflameBuff))
+                if (damageInfo.attacker != null)
                 {
-                    damageInfo.damageType |= DamageType.IgniteOnHit;
-                    attackerBody.ClearTimedBuffs(TemplarBuffs.AflameBuff);
+                    CharacterBody attackerBody = damageInfo.attacker.GetComponent<CharacterBody>();
+                    if (attackerBody && attackerBody.HasBuff(TemplarBuffs.AflameBuff))
+                    {
+                        damageInfo.damageType |= DamageType.IgniteOnHit;
+                        //attackerBody.ClearTimedBuffs(TemplarBuffs.AflameBuff);
+                    }
                 }
             }
             orig.Invoke(self, damageInfo);
         }
-        private static void LoadoutPanelController_Rebuild(On.RoR2.UI.LoadoutPanelController.orig_Rebuild orig, LoadoutPanelController self)
+            private static void LoadoutPanelController_Rebuild(On.RoR2.UI.LoadoutPanelController.orig_Rebuild orig, LoadoutPanelController self)
         {
             orig(self);
 

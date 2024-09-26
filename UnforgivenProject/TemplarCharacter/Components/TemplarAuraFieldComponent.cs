@@ -32,6 +32,10 @@ namespace TemplarMod.Templar.Components
         {
             base.transform.position = ownerBody.corePosition;
 
+            base.GetComponent<BuffWard>().radius = templarController.auraRadiusRecalculate;
+
+            base.GetComponent<SphereCollider>().radius = templarController.auraRadiusRecalculate;
+
             if (templarController && ownerBody.healthComponent.alive)
             {
                 if (!ownerBody.HasBuff(TemplarBuffs.AuraActiveBuff))

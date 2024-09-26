@@ -2,6 +2,7 @@
 using UnityEngine;
 using TemplarMod.Modules;
 using RoR2.Projectile;
+using RoR2.Items;
 using RoR2.UI;
 using UnityEngine.UI;
 using UnityEngine.AddressableAssets;
@@ -14,6 +15,7 @@ using Rewired.ComponentControls.Effects;
 using static RoR2.Skills.ComboSkillDef;
 using System.IO;
 using System.Reflection;
+using R2API.Utils;
 
 namespace TemplarMod.Templar.Content
 {
@@ -33,6 +35,8 @@ namespace TemplarMod.Templar.Content
         internal static GameObject holyBarrageIndicatorPrefab;
         internal static GameObject holyBarrageMuzzleFlash;
         internal static GameObject auraWardCleansingFire;
+        internal static GameObject auraWardConviction;
+        internal static GameObject auraWardPrayer;
 
         internal static GameObject nadoGhost;
 
@@ -375,17 +379,18 @@ namespace TemplarMod.Templar.Content
             if (!holyBarrageMuzzleFlash.GetComponent<NetworkIdentity>()) holyBarrageMuzzleFlash.AddComponent<NetworkIdentity>();
             // -
 
-            // Buff Ward Base (Cloneable)
-            
+            // Buff Ward 1 (Fire)
+
             auraWardCleansingFire = Addressables.LoadAssetAsync<GameObject>("RoR2/DLC1/Railgunner/RailgunnerMineAltDetonated.prefab").WaitForCompletion().InstantiateClone("AuraWardCleansingFire", false);
 
-            BuffWard buffWard = auraWardCleansingFire.GetComponent<BuffWard>();
-            buffWard.radius = 0f;
-            buffWard.interval = 0.01f;
-            buffWard.buffDef = TemplarBuffs.AflameBuff;
-            buffWard.expires = false;
-            buffWard.expireDuration = 0f;
-            buffWard.invertTeamFilter = false;
+            BuffWard fireAuraWard = auraWardCleansingFire.GetComponent<BuffWard>();
+
+            fireAuraWard.radius = 0f;
+            fireAuraWard.interval = 0.01f;
+            fireAuraWard.buffDef = TemplarBuffs.AflameBuff;
+            fireAuraWard.expires = false;
+            fireAuraWard.expireDuration = 0f;
+            fireAuraWard.invertTeamFilter = false;
 
             auraWardCleansingFire.GetComponent<SphereCollider>().radius = 12f;
 
@@ -395,6 +400,54 @@ namespace TemplarMod.Templar.Content
 
             Modules.Content.AddProjectilePrefab(auraWardCleansingFire);
             // -
+
+            // Buff Ward 2 (Convict)
+
+            auraWardConviction = Addressables.LoadAssetAsync<GameObject>("RoR2/DLC1/Railgunner/RailgunnerMineAltDetonated.prefab").WaitForCompletion().InstantiateClone("AuraWardConviction", false);
+
+            BuffWard convictAuraWard = auraWardConviction.GetComponent<BuffWard>();
+
+            convictAuraWard.radius = 0f;
+            convictAuraWard.interval = 0.01f;
+            convictAuraWard.buffDef = RoR2Content.Buffs.Cripple;
+            convictAuraWard.expires = false;
+            convictAuraWard.expireDuration = 0f;
+            convictAuraWard.invertTeamFilter = true;
+
+            auraWardConviction.GetComponent<SphereCollider>().radius = 12f;
+
+            UnityEngine.Component.Destroy(auraWardConviction.GetComponent<SlowDownProjectiles>());
+
+            auraWardConviction.AddComponent<TemplarAuraFieldComponent>();
+
+            Modules.Content.AddProjectilePrefab(auraWardConviction);
+
+            // -
+
+            // Buff Ward 3 (Prayer)
+
+            auraWardPrayer = Addressables.LoadAssetAsync<GameObject>("RoR2/DLC1/Railgunner/RailgunnerMineAltDetonated.prefab").WaitForCompletion().InstantiateClone("AuraWardPrayer", false);
+
+            BuffWard prayAuraWard = auraWardPrayer.GetComponent<BuffWard>();
+
+            prayAuraWard.radius = 0f;
+            prayAuraWard.interval = 0.01f;
+            prayAuraWard.buffDef = RoR2Content.Buffs.LifeSteal;
+            prayAuraWard.expires = false;
+            prayAuraWard.expireDuration = 0f;
+            prayAuraWard.invertTeamFilter = false;
+
+            auraWardPrayer.GetComponent<SphereCollider>().radius = 12f;
+
+            UnityEngine.Component.Destroy(auraWardPrayer.GetComponent<SlowDownProjectiles>());
+
+            auraWardPrayer.AddComponent<TemplarAuraFieldComponent>();
+
+            Modules.Content.AddProjectilePrefab(auraWardPrayer);
+
+            // -
+
+
 
         }
         #endregion

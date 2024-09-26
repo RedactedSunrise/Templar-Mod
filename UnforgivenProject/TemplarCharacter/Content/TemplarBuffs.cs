@@ -1,6 +1,7 @@
 ﻿using RoR2;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.Android;
 
 namespace TemplarMod.Templar.Content
 {
@@ -17,6 +18,7 @@ namespace TemplarMod.Templar.Content
         public static BuffDef AflameBuff;
         public static BuffDef AuraTimerBuff;
         public static BuffDef AuraActiveBuff;
+        public static BuffDef AuraForceActivateBuff;
 
         public static void Init(AssetBundle assetBundle)
         {
@@ -48,9 +50,12 @@ namespace TemplarMod.Templar.Content
 
             AuraTimerBuff = Modules.Content.CreateAndAddBuff("AuraTimer", Addressables.LoadAssetAsync<Sprite>("RoR2/Base/WardOnLevel/texBuffWarbannerIcon.tif").WaitForCompletion(),
                 Color.white, false, true, true);
+
             AuraActiveBuff = Modules.Content.CreateAndAddBuff("AuraTimer", Addressables.LoadAssetAsync<Sprite>("RoR2/Base/WardOnLevel/texBuffWarbannerIcon.tif").WaitForCompletion(),
                 Color.red, false, false, false);
 
+            AuraForceActivateBuff = Modules.Content.CreateAndAddBuff("ForceRadusBuff", Addressables.LoadAssetAsync<Sprite>("RoR2/Junk/Common/texBuffBodyArmorIcon.tif").WaitForCompletion(),
+                Color.red, false, false, false);
         }
     }
 }
